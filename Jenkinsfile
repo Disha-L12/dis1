@@ -6,7 +6,7 @@ pipeline {
  stages {
  stage('Checkout') {
  steps {
- git branch: 'master', url: 'https://github.com/Disha-L12/MyMavenApp.git'
+ git branch: 'master', url: 'https://github.com/Disha-L12/dis1.git'
  }
  }
  stage('Build') {
@@ -23,7 +23,7 @@ pipeline {
  stage('Run Application') {
  steps {
  // Start the JAR application
- sh 'java -jar target/MyMavenApp-1.0-SNAPSHOT.jar'
+ sh 'java -jar target/dis1-1.0-SNAPSHOT.jar'
  }
  }
  }
